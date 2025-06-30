@@ -1,5 +1,4 @@
-
-import { Code, Cursor, Users } from "lucide-react";
+import { Code, MousePointer, Users } from "lucide-react";
 
 export const WhoItsFor = () => {
   const audiences = [
@@ -8,7 +7,7 @@ export const WhoItsFor = () => {
       title: "Developers tired of re-learning their own code"
     },
     {
-      icon: Cursor,
+      icon: MousePointer,
       title: "Cursor/VS Code users who want real memory"
     },
     {
