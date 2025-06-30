@@ -22,13 +22,13 @@ export const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-white">
+    <section className="py-20 px-6 bg-black border-t border-gray-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             How It Works
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-400">
             Three simple steps to never lose context again
           </p>
         </div>
@@ -37,23 +37,23 @@ export const HowItWorks = () => {
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="relative p-8 bg-blue-50 rounded-2xl hover:bg-blue-100 transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="relative p-8 bg-gray-900 border border-gray-800 rounded-2xl hover:border-gray-700 transition-all duration-300 hover:scale-105"
             >
               {step.badge && (
-                <div className="absolute -top-3 right-4 bg-blue-600 text-white text-sm px-3 py-1 rounded-full font-medium">
+                <div className="absolute -top-3 right-4 bg-white text-black text-sm px-3 py-1 rounded-full font-medium">
                   {step.badge}
                 </div>
               )}
               
-              <div className="bg-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <step.icon className="h-8 w-8 text-white" />
+              <div className="bg-white w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                <step.icon className="h-8 w-8 text-black" />
               </div>
               
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl font-bold text-white mb-4">
                 {step.title}
               </h3>
               
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-400 leading-relaxed">
                 {step.description}
               </p>
             </div>

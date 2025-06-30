@@ -1,3 +1,4 @@
+
 import { Code, MousePointer, Users } from "lucide-react";
 
 export const WhoItsFor = () => {
@@ -17,9 +18,9 @@ export const WhoItsFor = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-blue-50">
+    <section className="py-20 px-6 bg-black">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
           Who It's For
         </h2>
         
@@ -27,12 +28,12 @@ export const WhoItsFor = () => {
           {audiences.map((audience, index) => (
             <div 
               key={index}
-              className="flex items-center justify-center bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105"
+              className="flex items-center justify-center bg-gray-900 border border-gray-800 p-6 rounded-xl hover:border-gray-700 transition-all duration-200 hover:scale-105"
             >
-              <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                <audience.icon className="h-6 w-6 text-blue-600" />
+              <div className="bg-white p-3 rounded-lg mr-4">
+                <audience.icon className="h-6 w-6 text-black" />
               </div>
-              <p className="text-lg font-medium text-gray-800">
+              <p className="text-lg font-medium text-white">
                 {audience.title}
               </p>
             </div>
